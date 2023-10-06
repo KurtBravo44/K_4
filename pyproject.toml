@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "kursach-4"
+version = "0.1.0"
+description = ""
+authors = ["Kurt Bravo <kurtbravo2344@gmail.ru>"]
+readme = "README.md"
+packages = [{include = "kursach_4"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
