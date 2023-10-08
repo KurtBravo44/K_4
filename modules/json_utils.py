@@ -36,7 +36,7 @@ class json_action(JSON_Options):
             for i in data:
                 if data.index(i) == to_del:
                     data.pop(minimal)
-                else:
+                elif data.index(i) > len(data):
                     print('Таких вакансий нет!')
                 minimal += 1
 

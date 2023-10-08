@@ -22,7 +22,7 @@ class HH(GetResponce):
             'text': self.vacancies,
             'per_page': 100,
             'code': "RUB",
-            'only_with_salary': True
+            'only_with_salary': True,
 
         }
         self.responce = requests.get("https://api.hh.ru/vacancies", params=self.params, headers=self.headers)
@@ -73,7 +73,7 @@ class SJ(GetResponce):
             info.append(i)
         return info
 
-class Parser:
+class Vacancy:
     def __init__(self, vacancies):
         self.vacancies = vacancies
 
@@ -101,7 +101,7 @@ class Parser:
                   f' Ссылка на вакансию: {url}')
             print()
         print('0: Выход')
-
+        print()
         while True:
             """Пользователь выбирает вакансии, после чего сохраняет его выбор"""
 
